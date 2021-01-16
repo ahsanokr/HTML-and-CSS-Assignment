@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Assignment</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                            <!-- code for header -->
+
+  <header class="topbar">
+      <div class="container flex justify-between items-center">
+          <div class="icons">
+            <a href="#"><svg class="svg-icon" viewBox="0 0 20 20"><path fill="none" d="M10,0.5c-5.247,0-9.5,4.253-9.5,9.5c0,5.247,4.253,9.5,9.5,9.5c5.247,0,9.5-4.253,9.5-9.5C19.5,4.753,15.247,0.5,10,0.5 M10,18.637c-4.77,0-8.636-3.867-8.636-8.637S5.23,1.364,10,1.364S18.637,5.23,18.637,10S14.77,18.637,10,18.637 M10.858,7.949c0-0.349,0.036-0.536,0.573-0.536h0.719v-1.3H11c-1.38,0-1.866,0.65-1.866,1.743v0.845h-0.86V10h0.86v3.887h1.723V10h1.149l0.152-1.299h-1.302L10.858,7.949z"></path>
+            </svg></a>
+            <a href="#"><svg class="svg-icon" viewBox="0 0 20 20"><path fill="none" d="M14.467,6.707c-0.34,0.198-0.715,0.342-1.115,0.419c-0.318-0.335-0.775-0.545-1.279-0.545c-0.969,0-1.754,0.773-1.754,1.727c0,0.135,0.015,0.267,0.045,0.394C8.905,8.628,7.612,7.94,6.747,6.896C6.596,7.151,6.509,7.448,6.509,7.764c0,0.599,0.31,1.128,0.78,1.438C7.002,9.192,6.732,9.115,6.495,8.985c0,0.007,0,0.014,0,0.021c0,0.837,0.605,1.535,1.408,1.694c-0.147,0.04-0.302,0.06-0.462,0.06c-0.113,0-0.223-0.011-0.33-0.031c0.223,0.687,0.871,1.186,1.638,1.199c-0.6,0.464-1.356,0.739-2.179,0.739c-0.142,0-0.281-0.007-0.418-0.023c0.777,0.489,1.699,0.775,2.689,0.775c3.228,0,4.991-2.63,4.991-4.913c0-0.075-0.002-0.149-0.004-0.223c0.342-0.244,0.639-0.547,0.875-0.894c-0.316,0.137-0.652,0.23-1.008,0.272C14.057,7.448,14.336,7.11,14.467,6.707 M10,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.196,0,9.407-4.211,9.407-9.406C19.406,4.805,15.195,0.594,10,0.594 M10,18.552c-4.723,0-8.551-3.829-8.551-8.552S5.277,1.449,10,1.449c4.723,0,8.551,3.829,8.551,8.551S14.723,18.552,10,18.552"></path>
+            </svg></a>
+            <a href="#"><svg class="svg-icon" viewBox="0 0 20 20"><path fill="none" d="M10,0.562c-5.212,0-9.438,4.226-9.438,9.438c0,5.213,4.226,9.438,9.438,9.438c5.212,0,9.438-4.225,9.438-9.438C19.438,4.788,15.212,0.562,10,0.562 M10,18.58c-4.738,0-8.58-3.841-8.58-8.58c0-4.738,3.842-8.58,8.58-8.58c4.737,0,8.579,3.841,8.579,8.58C18.579,14.739,14.737,18.58,10,18.58 M10.033,10.346C9.813,10.183,9.608,9.94,9.6,9.865c0-0.128,0-0.188,0.303-0.435c0.393-0.322,0.609-0.745,0.609-1.192c0-0.387-0.108-0.731-0.293-0.982h0.164l0.908-0.688H8.832c-0.986,0-1.851,0.774-1.851,1.657c0,0.912,0.667,1.604,1.565,1.642C8.533,9.933,8.525,9.996,8.525,10.06c0,0.131,0.03,0.257,0.09,0.378c-1.113,0.007-2.05,0.752-2.05,1.632c0,0.789,0.902,1.362,2.145,1.362c1.343,0,2.067-0.84,2.067-1.631C10.778,11.143,10.576,10.748,10.033,10.346 M8.026,8.198C7.985,7.869,8.054,7.565,8.212,7.384c0.096-0.11,0.22-0.169,0.358-0.169V7.036l0.016,0.179c0.412,0.014,0.807,0.501,0.88,1.086c0.042,0.335-0.03,0.647-0.191,0.833c-0.096,0.11-0.217,0.169-0.367,0.168h0C8.503,9.29,8.1,8.784,8.026,8.198 M8.707,12.749c-0.612,0-1.093-0.394-1.093-0.897c0-0.461,0.562-0.865,1.202-0.865v-0.18h0l0.017,0.18c0.138,0.002,0.272,0.022,0.399,0.062l0.126,0.092c0.326,0.231,0.498,0.363,0.549,0.575c0.013,0.056,0.019,0.111,0.019,0.167C9.927,12.458,9.517,12.749,8.707,12.749M13.43,6.993h-0.858v1.288H11.28V9.14h1.291v1.283h0.858V9.14h1.293V8.281H13.43V6.993z"></path>
+            </svg></a>
+            <a href="#"><svg class="svg-icon" viewBox="0 0 20 20"><path fill="none" d="M9.62,8.236h0.179c0.396,0,0.716-0.318,0.716-0.711V6.368c0-0.393-0.32-0.711-0.716-0.711H9.62c-0.396,0-0.716,0.318-0.716,0.711v1.157C8.904,7.917,9.224,8.236,9.62,8.236 M9.44,6.324c0-0.147,0.121-0.267,0.269-0.267c0.148,0,0.269,0.12,0.269,0.267v1.245c0,0.147-0.12,0.267-0.269,0.267c-0.148,0-0.269-0.12-0.269-0.267V6.324z M11.41,8.236c0.357,0,0.671-0.312,0.671-0.312v0.267h0.537V5.657h-0.537v1.957c0,0-0.18,0.222-0.358,0.222c-0.18,0-0.18-0.134-0.18-0.134V5.657h-0.536V7.88C11.007,7.88,11.052,8.236,11.41,8.236 M7.517,8.191h0.626V6.812l0.716-1.957H8.277L7.83,6.146l-0.447-1.29H6.756l0.76,1.957V8.191z M11.052,11.139c-0.116,0-0.207,0.068-0.269,0.135v1.794c0.057,0.061,0.141,0.119,0.269,0.119c0.269,0,0.269-0.299,0.269-0.299v-1.451C11.32,11.437,11.275,11.139,11.052,11.139 M10,0.469c-5.264,0-9.531,4.267-9.531,9.531c0,5.264,4.267,9.531,9.531,9.531c5.264,0,9.531-4.268,9.531-9.531C19.531,4.736,15.264,0.469,10,0.469 M10,18.665c-4.786,0-8.665-3.879-8.665-8.665c0-4.785,3.879-8.665,8.665-8.665c4.786,0,8.665,3.88,8.665,8.665C18.665,14.786,14.786,18.665,10,18.665 M13.289,8.792c0,0-1.642-0.085-3.289-0.085c-1.642,0-3.289,0.085-3.289,0.085c-0.742,0-1.343,0.573-1.343,1.28c0,0-0.134,0.831-0.134,1.664c0,0.831,0.134,1.664,0.134,1.664c0,0.708,0.601,1.28,1.343,1.28c0,0,1.616,0.086,3.289,0.086c1.615,0,3.289-0.086,3.289-0.086c0.741,0,1.343-0.572,1.343-1.28c0,0,0.134-0.84,0.134-1.664c0-0.84-0.134-1.664-0.134-1.664C14.632,9.365,14.03,8.792,13.289,8.792 M8.054,10.242H7.382v3.372H6.756v-3.372H6.084V9.688h1.969V10.242z M9.754,13.614H9.217v-0.257c0,0-0.313,0.299-0.671,0.299c-0.357,0-0.402-0.342-0.402-0.342v-2.646H8.68v2.475c0,0,0,0.129,0.179,0.129c0.179,0,0.358-0.214,0.358-0.214v-2.39h0.537V13.614z M11.856,12.974c0,0,0,0.683-0.491,0.683c-0.302,0-0.485-0.16-0.583-0.283v0.241h-0.581V9.688h0.581v1.273c0.089-0.094,0.308-0.292,0.583-0.292c0.357,0,0.491,0.298,0.491,0.683V12.974z M13.96,11.395v0.854h-1.118v0.64c0,0,0,0.299,0.268,0.299c0.27,0,0.27-0.299,0.27-0.299v-0.299h0.581v0.47c0,0-0.09,0.598-0.805,0.598c-0.717,0-0.851-0.598-0.851-0.598v-1.664c0,0,0-0.726,0.851-0.726C14.005,10.669,13.96,11.395,13.96,11.395 M13.109,11.139c-0.268,0-0.268,0.298-0.268,0.298v0.384h0.537v-0.384C13.379,11.437,13.379,11.139,13.109,11.139"></path>
+            </svg></a>
+            <a href="#"><svg class="svg-icon" viewBox="0 0 20 20"><path fill="none" d="M9.969,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.195,0,9.406-4.211,9.406-9.406C19.375,4.805,15.164,0.594,9.969,0.594 M9.969,18.552c-4.723,0-8.551-3.829-8.551-8.552s3.829-8.551,8.551-8.551S18.521,5.277,18.521,10S14.691,18.552,9.969,18.552 M12.534,5.724H7.403c-0.944,0-1.71,0.766-1.71,1.71v5.131c0,0.944,0.766,1.71,1.71,1.71h5.131c0.944,0,1.71-0.766,1.71-1.71V7.435C14.244,6.49,13.479,5.724,12.534,5.724M11.679,7.007h1.283V8.29h-1.283V7.007z M9.969,8.29c0.944,0,1.71,0.766,1.71,1.71s-0.766,1.71-1.71,1.71s-1.71-0.766-1.71-1.71S9.024,8.29,9.969,8.29 M13.39,12.565c0,0.472-0.384,0.854-0.855,0.854H7.403c-0.472,0-0.855-0.383-0.855-0.854V9.573h0.898C7.423,9.712,7.403,9.854,7.403,10c0,1.417,1.149,2.565,2.565,2.565c1.416,0,2.565-1.148,2.565-2.565c0-0.146-0.02-0.288-0.043-0.427h0.898V12.565z"></path>
+            </svg></a>
+          </div>
+          <div class="contact flex items-center">
+              <img src="./icons/phone.svg" alt="phone">
+              <P>+92(0304)450-4050</P>
+              <img src="./icons/phone.svg" alt="phone">
+              <p>+92(345)751-5161</p>
+              <div>
+              <a href="#"><img class="button" src="./icons/callbutton.png" alt="" ></a>
+              </div>
+          </div>
+        </div>
+  </header>
+
+                                 <!-- code for navigation bar -->
+
+  <nav>
+    <div class="navbar">
+      <div class="container flex justify-between items-center">
+        <div>
+          <img src="./icons/logo.svg" alt="">
+        </div>
+        <div>
+          <a href="#">WHY US</a>
+          <a href="#">ABOUT</a>
+          <a href="#">SERVICES</a>
+          <a class="active" href="#">PORTFOLIO</a>
+          <a href="#">PROCESS</a>
+          <a href="#">REVIEWS</a>
+          <a href="#">OUR SKILLS</a>
+          <a href="#">CONTACT US</a>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+                                <!-- code for slider -->
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+      <div class="heading">
+          <h1>WE  ARE  EXPERTS</h1>
+      </div>
+            <img src="./images/slider1.png" style="height: 100%; width: 100%; object-fit: contain">
+      <div class="para"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+        <button onclick="myFunction()" id="myBtn">READ MORE</button>
+      </div>
+  </div>
+  
+  <div class="mySlides fade">
+      <div class="heading">
+          <h1>WE  ARE  EXPERTS</h1>
+      </div>
+          <img src="./images/slider2.png" style="width:100%">
+      <div class="para"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+          <button onclick="myFunction()" id="myBtn">READ MORE</button>
+      </div>
+  </div>
+  
+  <div class="mySlides fade">
+      <div class="heading">
+          <h1> WE ARE  EXPERTS</h1>
+      </div>
+          <img src="./images/slider3.png" style="width:100%">
+      <div class="para"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+          <button onclick="myFunction()" id="myBtn">READ MORE</button>
+      </div>
+  </div>
+  <div>
+        <span class="slideButton1" onclick="currentSlide(1)"></span>
+        <span class="slideButton2" onclick="currentSlide(2)"></span>
+        <span class="slideButton3" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+
+                          <!-- New section our advantages -->
+
+<div class="advantage-container">
+    <div class="headingStyle">
+          <h1 class="heading1">OUR</h1><h1 class="heading2">ADVANTAGES</h1>
+    </div>
+    <div class="headingPara">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. harum molestiae, ea iste, dignissimos consectetur adipisicing elit. harum molestiae, ea iste, dignissimos rem nam atque laborum repellendus vero reiciendis omnis voluptas.</p>
+    </div>
+     
+    <div class="blocks flex">
+          <div class="block1to5">
+               <img src="./images/bulb.svg" alt=""><h5>INNOVATION</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+          </div>
+           <div class="block1to5">
+                <img src="./images/thumb-up.svg" alt=""><h5>QUALITY</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+           </div>
+          <div class="block1to5">
+                <img src="./images/clock.svg" alt=""><h5>EXPERIENCE</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+          </div>
+          <div class="block1to5">
+                <img src="./images/clients.svg" alt=""><h5>HAPPY CLIENTS</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+          </div>
+          <div class="block1to5">
+               <img src="./images/support.svg" alt=""><h5>SUPPORT</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+         </div>
+    </div>
+</div>
+
+                          <!-- ABOUT US SECTION -->
+
+<div class="aboutUs-container">
+    <div class="headingStyle">
+          <h1 class="heading1">ABOUT</h1><h1 class="heading2">US</h1>
+    </div>
+    <div class="paraAboutUs"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scelLorem, ipsum dolor <br><br> sit amet consectetur adipisicing elit. Omnis adipisci a porro sapiente modi rerum fugiat tempora in labore obcaecati quasi accusamus libero, itaque aperiam quis ut asperiores, perferendis doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia maiores excepturi ex magni, illum tenetur earum assumenda.<br><br> consequuntur.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis adipisci a porro sapiente modi rerum fugiat tempora in labore obcaecati quasi accusamus libero, itaque aperiam quis ut asperiores, perferendis doloremque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tenetur earum assumenda laborum voluptate quis quod harum pariatur tempore. Atque, maiores? Rerum placeat nobis consequuntur.<span id="start">...</span><span id="less">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida.</span></p>
+          <button onclick="readFunction()" id="Btn">READ MORE</button>
+    </div>
+
+                        <!-- Our Services section -->
+
+    <div class="services-container">
+          <div class="headingStyle">
+                <h1 class="heading1">OUR</h1><h1 class="heading2">SERVICES</h1>
+          </div>
+          <div class="headingPara">
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. harum molestiae, ea iste, dignissimos consectetur adipisicing elit. harum molestiae, ea iste, dignissimos rem nam atque laborum repellendus vero reiciendis omnis voluptas.</p>
+          </div>
+         
+          <div class="blocks flex">
+              <div class="block1-4">
+                  <img src="./images/star.svg" alt=""><h5>WEB DESIGN</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.<br><br> <a href="#"> read more</a>
+              </div>
+               <div class="block1-4">
+                  <img src="./images/star.svg" alt=""><h5>GRAPHIC DESIGN</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.<br><br> <a href="#"> read more</a>
+               </div>
+               <div class="block1-4">
+                   <img src="./images/star.svg" alt=""><h5>BRANDING</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.<br><br> <a href="#"> read more</a>
+               </div>
+               <div class="block1-4">
+                   <img src="./images/star.svg" alt=""><h5>MARKETING</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.<br><br> <a href="#"> read more</a>
+               </div>
+          </div>
+    </div>
+
+                          <!-- Protofolio section -->
+
+    <div class="portfolio-container">
+      <div class="headingStyle">
+        <h1 class="heading1">OUR</h1><h1 class="heading2">SERVICES</h1>
+      </div>
+       <div class="headingPara">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. harum molestiae, ea iste, dignissimos consectetur adipisicing elit. harum molestiae, ea iste, dignissimos rem nam atque laborum repellendus vero reiciendis omnis voluptas.</p>
+      </div>
+      <div class="subNavBar flex justify-center">
+        <a href="#">WEB DESIGN</a>
+        <a href="#"> GRAPHIC DESIGN</a>
+        <a href="#">BRANDING</a>
+        <a class="active" href="#">LOGO</a>
+        <a href="#">MARKETING</a>
+        <a href="#">ADVERTISEMENT</a>
+      </div>
+      <div class="portfolioImage flex justify-center">
+        <img src="./images/portfolio1.jpg" alt=""><img src="./images/portfolio2.jpg" alt=""><img src="./images/portfolio3.jpg" alt="">
+        <img src="./images/portfolio4.jpg" alt=""><img src="./images/portfolio5.jpg" alt="">
+      </div>
+      <div class="portfolioImage1 flex justify-center">
+        <img src="./images/portfolio6.jpg" alt=""><img src="./images/portfolio7.jpg" alt=""><img src="./images/portfolio8.jpg" alt="">
+        <img src="./images/portfolio9.jpg" alt=""><img src="./images/portfolio10.jpg" alt="">
+      </div>
+    </div>
+
+                           <!-- Our Processs section  -->
+
+    <div class="process-container">
+      <div class="headingStyle">
+        <h1 class="heading1">OUR</h1><h1 class="heading2">PROCESS</h1>
+      </div>
+       <div class="headingPara">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. harum molestiae, ea iste, dignissimos consectetur adipisicing elit. harum molestiae, ea iste, dignissimos rem nam atque laborum repellendus vero reiciendis omnis voluptas.</p>
+      </div>
+         
+      <div class="blocks flex">
+        
+          <div class="block1to6">
+           <img src="./images/mobile.png" alt=""><h5>REQUEST CALL</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+          </div>
+          <div class="block1to6">
+            <img src="./images/message.png" alt=""><h5>CONSULTATION</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+          </div>
+          <div class="block1to6">
+            <img src="./images/planning.png" alt=""><h5>PLANNING</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+          </div>
+          <div class="block1to6">
+            <img src="./images/process.png" alt=""><h5>WORK PROCESS</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+          </div>
+          <div class="block1to6">
+            <img src="./images/pencil.png" alt=""><h5>CORRECTING</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+          </div>
+          <div class="block1to6">
+            <img src="./images/letter.png" alt=""><h5>DELIVER</h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est porro quas deleniti provident.
+          </div>
+      </div>
+    </div>
+
+                                       <!-- Customer review section -->
+
+  <div class="review-container">
+      <div class="headingStyle">
+        <h1 class="heading1">PEOPLE</h1><h1 class="heading2">ABOUT US</h1>
+      </div>
+       <div class="headingPara">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. harum molestiae, ea iste, dignissimos consectetur adipisicing elit. harum molestiae, ea iste, dignissimos rem nam atque laborum repellendus vero reiciendis omnis voluptas.</p>
+      </div>
+      <div class="avatar">
+        <table>
+            <tr class="reviewRow">
+              <td>
+                  <img src="./images/avatar.png" alt="">
+               </td>
+               <td class="reviewCell">
+                    JOHN DOE <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cumque voluptatem doloremque Deserunt eveniet beatae tenetur molestias!</p>
+               </td>
+                <td class="border">
+                     <img src="./images/avatar.png" alt="">
+                 </td>
+                 <td >
+                       JOHN DOE <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cumque voluptatem doloremque Deserunt eveniet beatae tenetur molestias!</p>
+                 </td>
+            </tr> 
+            <tr>
+                 <td>
+                   <img src="./images/avatar.png" alt="">
+                 </td>
+                 <td class="reviewCell" >
+                      JOHN DOE <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cumque voluptatem doloremque Deserunt eveniet beatae tenetur molestias!</p>
+                 </td>
+                 <td class="border">
+                     <img src="./images/avatar.png" alt="">
+                </td>
+                 <td>
+                     JOHN DOE <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus cumque voluptatem doloremque Deserunt eveniet beatae tenetur molestias!</p>
+                 </td>
+             </tr>
+       </table>
+          <div class="flex justify-center">
+              <span class="nextButton active"> </span>
+              <span class="nextButton"> </span>
+              <span class="nextButton"> </span>
+          </div>
+    </div>
+</div>
+                            <!-- Packges  -->
+
+   <div class="pricingTableContainer">
+       <div>
+           <h1>Affordable Web Design Packages</h1>
+           <p>Experience the industry best web design deals at 60% discount with 100% Money back Gurantee</p>
+       </div>
+       <div class="pricingTable">
+            <div class="premium">
+                <p class="package">WEB BASIC PREMIUM</p> <hr>
+                <ul>
+                        <li class="price"><sup>$</sup>859.00</li>
+                        <li> <strong><del>$2148</del>&nbsp;60% off!</strong></li>
+                        <div><li>Unlimited Pages Website</li><i class="fa fa-question-circle" style="font-size:12px;color: green"></i></div>
+                        <li>1 Design Concept</li>
+                        <li>1 Dedicated Designer</li>
+                        <li>Turn around 5 Business Days</li>
+                        <li>10 Stock Photos</li>
+                        <li>Free On-Page SEO</li>
+                        <li>Free 1 Year WEb Hosting</li>
+                        <div><li> <strong>Free CMS Integration</strong></li><i class="fa fa-question-circle" style="font-size:12px;color: green"></i></div>
+                        <li><strong>100%</strong>&nbsp;Satisfaction Guranted</li>
+                </ul>
+                <button class="order">ORDER NOW</button>
+            </div>
+            <div class="premium active">
+                <p class="package">WEB BASIC PLUS</p> <p>Web Basic Plus</p> <hr>
+                <ul>
+                        <li class="price"><sup>$</sup>649.00</li>
+                        <li> <strong><del>$1623</del>&nbsp;60% off!</strong></li>
+                        <li>7 Pages Website</li>
+                        <li>1 Design Concept</li>
+                        <li>1 Dedicated Designer</li>
+                        <li>Turn around 5 Business Days</li>
+                        <li>7 Stock Photos</li>
+                        <li>Free On-Page SEO</li>
+                        <li>W3C Certified HTML</li>
+                        <li> <strong>Add CMS for $299</strong></li>
+                        <li><strong>100%</strong>&nbsp;Satisfaction Guranted</li>
+                </ul>
+                <button class="order">ORDER NOW</button>
+            </div>
+            <div class="premium">
+                <p class="package">WEB BASIC</p> <hr>
+                <ul>
+                        <li class="price"><sup>$</sup>449.00</li>
+                        <li> <strong><del>$1248</del>&nbsp;60% off!</strong></li>
+                        <div><li>5 Pages Website</li><i class="fa fa-question-circle" style="font-size:12px;color: green"></i></div>
+                        <li>1 Design Concept</li>
+                        <li>1 Dedicated Designer</li>
+                        <li>Turn around 5 Business Days</li>
+                        <li>4 Stock Photos</li>
+                        <li>Free On-Page SEO</li>
+                        <li>W3C Certified HTML</li>
+                        <div><li> <strong>Add CMS for $299</strong></li><i class="fa fa-question-circle" style="font-size:12px;color: green"></i></div>
+                        <li><strong>100%</strong>&nbsp;Satisfaction Guranted</li>
+                </ul>
+                <button class="order">ORDER NOW</button>
+            </div>
+        </div>
+        <div> <button class="viewAllPackges">View All Packages</button></div>
+   </div>                            
+
+                      <!-- Our skills portion of code  -->
+
+<div class="ourSkills-container">
+    <div class="headingStyle">
+        <h1 class="heading1">OUR</h1><h1 class="heading2">SKILLS</h1>
+    </div>
+    <div class="headingPara">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. harum molestiae, ea iste, dignissimos consectetur adipisicing elit. harum molestiae, ea iste, dignissimos rem nam atque laborum repellendus vero reiciendis omnis voluptas.</p>
+    </div>
+    <div class="ourSkills flex justify-between">
+      <div class="ourSkill-45">
+        <div class="svgCirlcle">
+            <svg style="height: 150px; width: 150px;">
+                <circle r="50" cx="75" cy="75" class="track45"></circle>
+                <circle r="50" cx="75" cy="75" class="progress45"></circle>
+              </svg>
+        </div>
+        <div class="number45">
+            <h2>45<span>%</span></h2>
+        </div>
+        <div class="text">
+            
+        </div>
+    </div>
+    <div class="ourSkill-60">
+        <div class="svgCirlcle">
+            <svg style="height: 150px; width: 150px;">
+                <circle r="50" cx="75" cy="75" class="track60"></circle>
+                <circle r="50" cx="75" cy="75" class="progress60"></circle>
+              </svg>
+        </div>
+        <div class="number60">
+            <h2>60<span>%</span></h2>
+        </div>
+        <div class="text">
+            SEO & ADS
+        </div>
+    </div>
+    <div class="ourSkill-75">
+        <div class="svgCirlcle">
+            <svg style="height: 150px; width: 150px;">
+                <circle r="50" cx="75" cy="75" class="track75"></circle>
+                <circle r="50" cx="75" cy="75" class="progress75"></circle>
+              </svg>
+        </div>
+        <div class="number75">
+            <h2>75<span>%</span></h2>
+        </div>
+        <div class="text">
+            BRANDING
+        </div>
+    </div>
+    <div class="ourSkill-80">
+        <div class="svgCirlcle">
+            <svg style="height: 150px; width: 150px;">
+                <circle r="50" cx="75" cy="75" class="track80"></circle>
+                <circle r="50" cx="75" cy="75" class="progress80"></circle>
+              </svg>
+        </div>
+        <div class="number80">
+            <h2>80<span>%</span></h2>
+        </div>
+        <div class="text">
+            WEB DESIGN
+        </div>
+    </div>
+    </div>
+</div>
+    
+                          <!-- contact us section -->
+
+    <div class="contactUs-container">
+      <h1>START YOUR NEW PROJECT</h1>
+      <div class="form">
+        <form action="#" method="post">
+          <input type="text" name="yourName" id="yourName" value="Your Name">
+          <input type="email" name="yourEmail" id="yourEmail" value="Your Email">
+          <input type="tel" name="yourPhone" id="yourPhone" value="Your Phone">
+          <input type="submit" value="SEND REQUEST" id="sendRequest">
+        </form>
+      </div>
+      <div class="headingPara">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. harum molestiae, ea iste, dignissimos consectetur adipisicing elit. harum molestiae, ea iste, dignissimos rem nam atque laborum repellendus vero reiciendis omnis voluptas.</p>
+     </div>
+    </div>
+    <div class="contactUs2-container">
+      <div class="headingStyle">
+        <h1 class="heading1">OUR</h1><h1 class="heading2">CONTACTS</h1>
+      </div>
+       <div class="headingPara">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. harum molestiae, ea iste, dignissimos consectetur adipisicing elit. harum molestiae, ea iste, dignissimos rem nam atque laborum repellendus vero reiciendis omnis voluptas.</p>
+      </div>
+      <div class=" row1 flex items-center justify-center">
+        <img src="./images/location.svg" alt=""> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut saepe laborum fugiat quisquam </p>
+      </div>
+      <div class=" row2 flex items-center justify-center">
+        <img src="./images/phone.svg" alt=""> <p> (304) 450-4050</p><img src="./images/phone.svg" alt=""> <p> (304) 451-4358</p><img src="./images/email.svg" alt=""> <p>info@website.com</p>
+      </div>
+      <div class="map">
+      </div>
+    </div> 
+
+                               <!-- footer section -->
+
+
+  <div class="footer-container">
+      <div class="footerLogo">
+             <img src="./icons/logo.svg" alt=""> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo architecto doloremque perferendis, cupiditate ut amet dolor dicta, cumque maxime dolore tenetur adipisci? Sed animi voluptate exercitationem ut, cupiditate magnam.</p>
+          <br><h5>&copy; Panacloud 2020</h5>
+      </div>
+      <div class="footerList1">
+          <h3>SERVICES</h3><br>
+          <a href="#">Lorem</a><br><a href="#">Lorem cede de </a><br><a href="#">Lorem</a><br><a href="#">Lorem</a><br><a href="#">Lorem</a><br><a href="#">Lorem de bet</a><br><a href="#">Lorem de</a>
+      </div>
+      <div class="footerList2">
+          <h3>USEFUL LINKS</h3><br>
+          <a href="#">Lorem</a><br><a href="#">Lorem cede de </a><br><a href="#">Lorem</a><br><a href="#">Lorem</a><br><a href="#">Lorem</a><br><a href="#">Lorem de bet</a><br><a href="#">Lorem de</a>
+      </div>
+      <div class="footerList3">
+          <h3>CONTACTS</h3><br>
+          <div><img src="./images/phone.svg" alt=""><P>+92(0304) 450 4050</P></div>
+          <div><img src="./images/phone.svg" alt=""><P>+92(0304) 450 4050</P></div>
+          <div> <img src="./images/location.svg" alt=""> <p>info@website.com</p></div>
+          
+          <br><h3>Follow Us</h3><br>
+      <div class="footerSocialLinks">
+              
+              <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+              <a href="#"><img src="./icons/twitter.svg" alt=""></a>
+              <a href="#"><img src="./icons/intagram.svg" alt=""></a>
+              <a href="#"><img src="./icons/linkedin.svg" alt=""></a>
+              <a href="#"><img src="./icons/youtube.svg" alt=""></a>
+              <a href="#"><img src="./icons/google.svg" alt=""></a>
+      </div>
+  </div>
+</div> 
+  <script src="app.js"></script>
+</body>
+</html>
