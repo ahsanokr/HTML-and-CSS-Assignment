@@ -1,4 +1,4 @@
-# HTML-CSS-Assignment-Class Teacher Sir Daniyal and Sir Ameen
+# HTML-CSS-Assignment Class Teacher Sir Daniyal and Sir Ameen
 This Repostory consist of two Assignments
 (1) HTML Assignment
 (2) CSS Assignment
