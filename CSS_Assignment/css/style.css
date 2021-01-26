@@ -1,27 +1,27 @@
 /* fonts  */
 @font-face {
     font-family:"Roboto-Bold";
-    src:url(./fonts/Roboto-Bold.ttf)
+    src:url(../fonts/Roboto-Bold.ttf)
 }
 @font-face {
     font-family:"Roboto-Medium";
-    src:url(./fonts/Roboto-Medium.ttf)
+    src:url(../fonts/Roboto-Medium.ttf)
 }
 @font-face {
     font-family:"Roboto-Regular";
-    src:url(./fonts/Roboto-Regular.ttf)
+    src:url(../fonts/Roboto-Regular.ttf)
 }
 @font-face {
     font-family:"Roboto-Light";
-    src:url(./fonts/Roboto-Light.ttf)
+    src:url(../fonts/Roboto-Light.ttf)
 }
 @font-face {
     font-family:"Roboto-Thin";
-    src:url(./fonts/Roboto-Thin.ttf)
+    src:url(../fonts/Roboto-Thin.ttf)
 }
 @font-face {
     font-family:"Roboto-Black";
-    src:url(./fonts/Roboto-Black.ttf)
+    src:url(../fonts/Roboto-Black.ttf)
 }
 /* Reset  */
 *{
@@ -261,7 +261,7 @@ nav .navbar .container > div a:hover{
       /* about us secton formating */
     .aboutUs-container {
       height: 370px;
-      background-image: url(./images/about.svg);
+      background-image: url(../images/about.svg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -439,7 +439,7 @@ nav .navbar .container > div a:hover{
          }
          .contactUs2-container .map {
             height: 250px;
-            background-image: url(./images/mapimage.png);
+            background-image: url(../images/mapimage.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
