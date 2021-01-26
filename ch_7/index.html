@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Chapter #7 - Form</h1> 
+   <form action="index.html" method="get">
+    <fieldset>
+        <legend> Your details: </legend>
+        Name:<input type="text" name="yourname" value=""> <br>
+        Email:<input type="email" name="email" value="">
+    </fieldset>
+</form>
+<form action="index.html" method="get">
+    <fieldset>
+        <legend> Your Review: </legend>
+        <label for="selectone">How did you hear about us?:</label>
+
+        <select id="slectone">
+            <option value="google">Google</option>
+            <option value="socialmedia">Social Media</option>
+            <option value="referal">Peer Referal</option>
+            <option value="other">Other</option>
+        </select>
+        <P> Would you visit again?</P>
+        <input type="radio" name="visit" id="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="visit" id="no">
+        <label for="no">No</label>
+        <input type="radio" name="visit" id="maybe">
+        <label for="maybe">May be</label>
+        <p>Comments:</p>
+        <textarea name="comments" id="comments" cols="50" rows="5"></textarea><br>
+        <input type="checkbox" name="signup" id="signup" checked> Sign me up for email updates <br>
+        <input type="submit" value="Submit Review">
+    </fieldset>
+</form><br>
+</body>
+</html>
